@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+       header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        grid-area: a;
+        background-color: #333;
+        padding: 20px;
+        font-weight: bold;
+        color: white;
+       }
+       aside{
+        background-color: gray;
+        grid-area:b ;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        color: white;
+       }
+       main{
+        grid-area: c;
+       }
+       footer{
+        grid-area: d;
+        background-color: #333;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+       }
+        body{
+            display: grid;
+            grid-template-areas: "a a"
+            "b c"
+            "d d";
+            height: 100vh;
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: 1fr 5fr;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Admin Dashboard</h2>
+        <p>Dark Mode</p>
+    </header>
+    <aside>
+        <a href="#">Home</a>
+        <a href="#">User</a>
+        <a href="#">Setting</a>
+    </aside>
+    <main>
+        <h1>Welcome to the Admin Dashboard</h1>
+        <p>This is a simple layout CSS Grid. You can add more sections ,widgets or data visualization here. </p>
+    </main>
+    <footer>&copy;2023 Admin Dasboard. All rights reserved</footer>
+    
+</body>
+</html>
