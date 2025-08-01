@@ -1,0 +1,74 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Center content */
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+
+/* Card style */
+.card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 300px;
+}
+
+/* Balance style */
+.balance {
+    font-size: 2rem;
+    color: #2ecc71;
+    margin-bottom: 20px;
+}
+
+/* Common button style */
+.btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+/* Specific buttons */
+.deposit {
+    background-color: #2ecc71;
+}
+
+.withdraw {
+    background-color: #e74c3c;
+}
+
+/* Button hover effect */
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 400px) {
+    .card {
+        padding: 20px;
+    }
+    .btn {
+        padding: 12px;
+    }
+    .balance {
+        font-size: 1.5rem;
+    }
+}
