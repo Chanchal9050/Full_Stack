@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Live Character Counter</title>
+</head>
+<body>
+
+  <h2>Live Character Counter</h2>
+  <textarea id="myText" placeholder="Start typing..." rows="5" cols="40"></textarea>
+  <p>Characters: <span id="count">0</span></p>
+
+  <script>
+    // Get textarea and counter
+    let textarea = document.getElementById("myText");
+    let counter = document.getElementById("count");
+
+    // Update counter whenever user types
+    // textarea.addEventListener("input",()=>{
+    //     counter.textContent = textarea.value.length;
+    // })
+    textarea.addEventListener("input", () => {
+    // Remove all spaces from the value before counting
+    const valueWithoutSpaces = textarea.value.replace(/\s/g, "");
+    counter.textContent = valueWithoutSpaces.length;
+});
+
+    // textarea.oninput = function() {
+    //   counter.textContent = textarea.value.length;
+    // }
+  </script>
+
+</body>
+</html>
